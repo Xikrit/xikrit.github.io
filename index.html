@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- jQuery Ripples JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+
+
+
+
+    <title>Xikrit</title>
+
+
+    <style>
+		html {
+		  height: 100%;
+		}
+		body {
+		  color: #fff;
+		  font-size: 20px;
+		  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		  background-image: url(https://i.ibb.co/DYJ4cD3/bg-xikrit.png);
+	
+		  background-size: cover;
+		  background-position: 70% 0;
+		  height: 100%;
+		  text-align: center;
+		  margin: 0;
+		  padding: 0;
+		}
+		body:before {
+		  content: '';
+		  display: inline-block;
+		  vertical-align: middle;
+		  height: 100%;
+		}
+		section {
+		  display: inline-block;
+		  vertical-align: middle;
+		  padding:  100px;
+		  max-width: 500px;
+		  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+		  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+		}
+		h1 {
+		  color: #fff;
+		  font-size: 54px;
+		  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+
+
+
+		/* ignore the code below */
+
+
+		.link-area
+		{
+		  position:fixed;
+		  bottom:20px;
+		  left:20px;  
+		  padding:15px;
+		  border-radius:40px;
+		  background:tomato;
+		}
+		.link-area a
+		{
+		  text-decoration:none;
+		  color:#fff;
+		  font-size:25px;
+		}
+    </style>
+</head>
+<body>
+  <section>
+  <header>
+    <h1>Xikrit</h1>
+    <h3>A Journey towards WebRTC</h3>
+  </header>
+</section>
+
+
+
+<script>
+    // $(document).ready(function(){
+    //     $(".centered").ripples({
+    //         resolution: 512,
+    //         dropRadius: 20,
+    //         interactive: true,
+    //         perturbance: 0.02,        });
+    // }); 
+
+   $('body').ripples({
+  resolution: 1024,
+  dropRadius: 30,
+  perturbance: 0.02,
+});
+</script>
+
+</body>
+</html>
